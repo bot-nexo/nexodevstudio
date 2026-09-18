@@ -3,21 +3,15 @@ import { COMPANY } from "./company";
 export const CTA = {
   badge: "Hablemos",
 
-  title: "¿Listo para comenzar?",
+  title: "¿Listo para impulsar tu negocio?",
 
   description:
-    "Hagamos realidad tu idea.",
+    "Agenda tu Sesión de Estrategia Gratuita de 30 minutos y descubramos juntos cómo mejorar tu presencia digital.",
 
   primaryButton: {
-    text: "Agenda una llamada",
+    text: "Agendar Sesión Gratuita",
     href: COMPANY.whatsapp,
     target: "_blank",
     rel: "noopener noreferrer"
-  },
-
-  secondaryButton: {
-    text: "Ver proyectos",
-    href: "#projects"
   }
 };
-// "https://wa.me/+573226933654?text=Hola%20NexoDevStudio%2C%20estoy%20interesado%20en%20agendar%20una%20demo%20de%20tu%20men%C3%BA%20digital." 

@@ -13,17 +13,15 @@ export const FOOTER = {
   socials: [
     {
       name: "GitHub",
-      url: "https://github.com/NexoDevStudio"
-    },
-    {
-      name: "LinkedIn",
-      // url: "https://co.linkedin.com/company/nexodevstudio"
-      url: "#hero"
+      url: "https://github.com/bot-nexo"
     },
     {
       name: "Instagram",
-      // url: "https://www.instagram.com/nexo_devstudio/"
-      url: "#hero"
+      url: "https://www.instagram.com/nexodev.studio"
+    },
+    {
+      name: "WhatsApp",
+      url: "https://wa.me/573226933654"
     }
   ]
 };

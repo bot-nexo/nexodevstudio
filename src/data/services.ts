@@ -12,25 +12,25 @@ export const SERVICES: Service[] = [
     {
         title: "Landing Pages de Conversión",
         description:
-            "Sitios rápidos, optimizados para SEO y diseñados para convertir visitantes en clientes.",
+            "Sitios ultrarrápidos y optimizados para SEO que transforman visitantes en clientes potenciales calificados.",
         icon: Globe,
     },
     {
         title: "Desarrollo Web a Medida",
         description:
-            "Aplicaciones web modernas, escalables y adaptadas a las necesidades de tu negocio.",
+            "Aplicaciones modernas y escalables diseñadas para optimizar la operativa de tu negocio sin límites técnicos.",
         icon: Code2,
     },
     {
         title: "Automatización de Procesos",
         description:
-            "Conectamos herramientas y automatizamos tareas para ahorrar tiempo y reducir errores.",
+            "Automatización con IA integrada a WhatsApp y CRM para reducir atención manual y eliminar tareas repetitivas.",
         icon: Bot,
     },
     {
         title: "Soluciones con IA",
         description:
-            "Implementamos inteligencia artificial para optimizar procesos y crear nuevas oportunidades.",
+            "Agentes inteligentes y automatizaciones avanzadas para potenciar la productividad y descubrir nuevas oportunidades de negocio.",
         icon: BrainCircuit,
     },
 ];

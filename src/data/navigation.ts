@@ -25,29 +25,6 @@ export const NAVIGATION = [
 
     {
 
-        label: "Proyectos",
-
-        href: "#projects"
-
-    },
-
-    {
-
-        label: "Proceso",
-
-        href: "#process"
-
-    },
-    {
-
-        label: "¿Quienes Somos?",
-
-        href: "#aboutus"
-
-    },
-
-    {
-
         label: "Contacto",
 
         href: "#cta"

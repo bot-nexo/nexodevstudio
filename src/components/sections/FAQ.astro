@@ -1,0 +1,57 @@
+---
+import Container from "../ui/Container.astro";
+import SectionHeader from "../ui/SectionHeader.astro";
+
+const faqs = [
+    {
+        question: "¿El código y la propiedad intelectual me pertenecen?",
+        answer: "Sí, entregamos acceso 100% exclusivo al repositorio y derechos de uso completos."
+    },
+    {
+        question: "¿Cuánto tarda en entregarse un MVP o Landing Page?",
+        answer: "Entregas promedio entre 1 a 3 semanas según la complejidad del proyecto."
+    },
+    {
+        question: "¿Ofrecen soporte y mantenimiento post-lanzamiento?",
+        answer: "Sí, contamos con planes de evolución continua y monitoreo para asegurar que tu producto siempre esté optimizado."
+    },
+    {
+        question: "¿Por qué elegir desarrollo a medida sobre plantillas tradicionales?",
+        answer: "Ofrecemos velocidad ultrarrápida, SEO real, sin mensualidades de plugins y escalabilidad sin límites que las plantillas no pueden igualar."
+    }
+];
+---
+
+<section id="faq" class="py-24 bg-zinc-950" style="padding: 6rem 0;">
+    <Container>
+        <SectionHeader
+            badge="FAQ"
+            title="Preguntas Frecuentes"
+            description="Todo lo que necesitas saber sobre nuestro proceso de trabajo y entregables."
+        />
+
+        <div class="max-w-3xl mx-auto mt-12 flex flex-col gap-4" style="max-width: 48rem; margin: 3rem auto 0; display: flex; flex-direction: column; gap: 1rem;">
+            {faqs.map((faq) => (
+                <details class="group bg-zinc-900 border border-white/5 rounded-xl overflow-hidden" style="background: #18181b; border: 1px solid rgba(255,255,255,0.05); border-radius: 0.75rem;">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer text-white font-medium list-none" style="padding: 1.5rem; display: flex; align-items: center; justify-content: space-between; cursor: pointer; color: white; font-weight: 500;">
+                        {faq.question}
+                        <span class="transition-transform group-open:rotate-180" style="transition: transform 0.2s;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-400" style="padding: 0 1.5rem 1.5rem 1.5rem; color: #9ca3af; line-height: 1.6;">
+                        {faq.answer}
+                    </div>
+                </details>
+            ))}
+        </div>
+    </Container>
+</section>
+
+<style>
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+</style>

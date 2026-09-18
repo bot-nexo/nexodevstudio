@@ -73,12 +73,19 @@ const canonical = new URL(Astro.url.pathname, SEO.url).toString();
                 "@context": "https://schema.org",
                 "@graph": [
                     {
-                        "@type": "Organization",
+                        "@type": "ProfessionalService",
                         "@id": `${SEO.url}/#organization`,
                         name: "NexoDevStudio",
                         url: SEO.url,
                         logo: `${SEO.url}/favicon.svg`,
                         description: SEO.description,
+                        image: `${SEO.url}${image}`,
+                        address: {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Andes",
+                            "addressRegion": "Antioquia",
+                            "addressCountry": "CO"
+                        }
                     },
                     {
                         "@type": "WebSite",

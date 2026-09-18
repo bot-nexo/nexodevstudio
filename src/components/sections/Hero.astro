@@ -1,7 +1,7 @@
 ---
 import Button from "../ui/Button.astro";
 import GridBackground from "../ui/GridBackground.astro";
-import { CTA } from "../../data/cta";
+import { COMPANY } from "../../data/company";
 ---
 
 <section
@@ -15,36 +15,30 @@ import { CTA } from "../../data/cta";
             class="inline-flex items-center gap-2 text-sm font-semibold text-zinc-400 animate-pulse"
         >
             <div class="h-3 w-3 rounded-full bg-purple-500"></div>
-            Disponible para nuevos proyectos
+            Disponible para Sesión de Estrategia Gratuita
         </div>
 
         <h1
             class="mt-8 max-w-5xl text-6xl font-bold leading-none tracking-tight md:text-8xl"
         >
-            Construimos
+            Transformamos
 
-            <span class="text-violet-400"> productos digitales </span>
+            <span class="text-violet-400"> ideas en ventas </span>
 
-            que impulsan negocios.
+            con desarrollo web estratégico.
         </h1>
 
         <p class="mt-8 max-w-2xl text-xl leading-8 text-zinc-400">
-            Creamos landing pages, aplicaciones web, automatizaciones e
-            inteligencia artificial con un enfoque en rendimiento, escalabilidad
-            y experiencia de usuario.
+            Creamos landing pages y aplicaciones web enfocadas en la conversión, velocidad y escalabilidad. No usamos plantillas lentas, desarrollamos a medida.
         </p>
 
         <div class="mt-12 flex flex-wrap gap-4">
-            <Button href="#projects" variant="secondary">
-                Ver proyectos
-            </Button>
-
             <Button
-                href={CTA.primaryButton.href}
-                target={CTA.primaryButton.target}
-                rel={CTA.primaryButton.rel}
+                href={COMPANY.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
             >
-                {CTA.primaryButton.text}
+                Agendar Sesión de 30 min (Gratis)
             </Button>
         </div>
     </div>

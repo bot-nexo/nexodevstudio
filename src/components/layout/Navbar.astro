@@ -1,7 +1,7 @@
 ---
-import { NAVIGATION } from "../../data/navigation";
 import Button from "../ui/Button.astro";
 import Logo from "../ui/Logo.astro";
+import { COMPANY } from "../../data/company";
 ---
 
 <header id="navbar" class="navbar">
@@ -10,32 +10,14 @@ import Logo from "../ui/Logo.astro";
             <Logo />
         </a>
 
-        <div class="desktop-menu">
-            {NAVIGATION.map((item) => <a href={item.href}>{item.label}</a>)}
-        </div>
-
         <div class="desktop-cta">
-            <Button href="#cta" variant="primary"> Iniciar Proyecto </Button>
+            <Button href={COMPANY.whatsapp} target="_blank" variant="primary"> Agendar Asesoría </Button>
         </div>
-
-        <button class="mobile-toggle" id="menuButton" aria-label="Abrir menú">
-            ☰
-        </button>
     </nav>
-
-    <div id="mobileMenu" class="mobile-menu">
-        {NAVIGATION.map((item) => <a href={item.href}>{item.label}</a>)}
-
-        <Button href="#cta"> Iniciar Proyecto </Button>
-    </div>
 </header>
 
 <script>
     const navbar = document.getElementById("navbar");
-
-    const button = document.getElementById("menuButton");
-
-    const menu = document.getElementById("mobileMenu");
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > 30) {
@@ -43,9 +25,5 @@ import Logo from "../ui/Logo.astro";
         } else {
             navbar?.classList.remove("navbar-scrolled");
         }
-    });
-
-    button?.addEventListener("click", () => {
-        menu?.classList.toggle("mobile-open");
     });
 </script>
