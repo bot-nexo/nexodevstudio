@@ -17,5 +17,5 @@ export const COMPANY = {
 
   cta: "Hablemos de tu proyecto",
 
-  whatsapp: "https://wa.me/+573226933654/?text=Hola%20NexoDevStudio%2C%20estoy%20interesado%20en%20una%20solucion%20digital, podemos agendar una llamada?."
+  whatsapp: "https://wa.me/+573226933654/?text=Hola%20NexoDevStudio%2C%20estoy%20interesado%20en%20agendar%20la%20Sesión%20de%20Estrategia%20Gratuita."
 }
